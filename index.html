@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,21 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/section.css">
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">
             <img src="img/Logo.jpg" alt="">
         </a>
 
-        <ul class="categorias">
+        <ul class="categoria">
+            <i class="ph ph-x-circulo menu-icon" onclick="toggleMenu()"></i>
             <li><a href="#">Home</a></li>
             <li><a href="#">Quem Somos</a></li>
             <li><a href="#">Tudo sobre o seu cabelo</a></li>
@@ -28,6 +34,8 @@
                 </a>
             </li>
         </ul>
+
+        <i class="ph ph-list menu-icon" onclick="toggleMenu()"></i>
 
         <div class="redes-socias">
             <a href="#" class="icon">
@@ -69,18 +77,278 @@
                 </div>
             </div>
 
-            <div class="cards-blocos-banner">
-                <div class="bloco-banner">
-                    <h3 href="#">
-                        Centenas de transpantes feitos todo mês
-                    </h3>
-                </div>
-            </div>
+
         </section>
     </section>
 
     <section class="home">
-
+        <br><br><br>
+        <div class="container-home">
+            <div class="left">
+                <img src="img/persona-banner.webp" alt="">
+            </div>
+            <div class="right">
+                <h2>Prótese Capilar</h2>
+                <h1>Masculina</h1>
+                <p>Os homens são igualmente conscientes sobre sua aparência quando se trata de perda de cabelo. Por
+                    isso, conheça as nossas soluções em prótese capilar masculina!</p>
+                <div class="button-home">
+                    <a href="#" class="saiba-mais">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="home visagismo">
+        <br><br><br>
+        <div class="container-home">
+            <div class="right">
+                <h2>Saiba mais sobre o</h2>
+                <h1>Visagismo</h1>
+                <p>Com base no visagismo, a escolha da sua prótese capilar é feita com o auxílio de nossos profissionais
+                    através de um estudo das linhas e formas do seu rosto.</p>
+                <div class="button-home">
+                    <a href="#" class="saiba-mais">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+            <div class="left">
+                <img src="img/persona-visagismo.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos-conteudo">
+        <div class="desc-servicos">
+            <span>Sobre Nossos</span>
+            <h1>Serviços</h1>
+        </div>
+        <div class="servicos">
+            <div class="bloco">
+                <img src="img/protese-de-micropele-1.webp" alt="">
+                <div class="desc-servico">
+                    <h3>Servico 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores quia ex nostrum labore. Voluptatum.</p>
+                    <br><br>
+                    <a href="#" class="button-servicos">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="bloco">
+                <img src="img/protese-de-tela-feminina.webp" alt="">
+                <div class="desc-servico">
+                    <h3>Servico 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores quia ex nostrum labore. Voluptatum.</p>
+                    <br><br>
+                    <a href="#" class="button-servicos">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos-2">
+        <div class="container-img-2">
+            <div class="img-servicos-2">
+                <img src="img/icone1.png" alt="">
+                <p>Protese capilar masculina</p>
+            </div>
+            <div class="img-servicos-2">
+                <img src="img/woman.png" alt="">
+                <p>Protese capilar feminina</p>
+            </div>
+            <div class="img-servicos-2">
+                <img src="img/icone4.png" alt="">
+                <p>Alongamento e preenchimento</p>
+            </div>
+            <div class="img-servicos-2">
+                <img src="img/812a925fe0de2dca96cb4e9a6104f732.png" alt="">
+                <p>Sobrancelha
+                    Fio-a-fio</p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section id="nossos-servicos">
+        <div class="wrap flex">
+            <header class="head-section flex">
+                <h2 class="head-title">
+                    <span>Nossos</span>
+                    Serviços
+                </h2>
+                <span class="head-gap"></span>
+                <div class="head-description">
+                    <p>A ProCap Hair entende que lidar com mudanças pode ser um momento estressante. Por isso,
+                        oferecemos para você as melhores soluções em próteses capilares masculinas e femininas, com
+                        todos os tratamentos para obter um resultado satisfatório e natural. Confira os nossos serviços!
+                    </p>
+                </div>
+            </header>
+            <div id="lista-servicos">
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/protese-de-micropele-masculina"
+                            title="Prótese de Micropele Masculina">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/protese-de-micropele-1.jpg"
+                                alt="Prótese de Micropele Masculina" title="Prótese de Micropele Masculina">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/protese-de-micropele-masculina"
+                            title="Prótese de Micropele Masculina">
+                            <h3 class="servico-subtitle">Protese de Micropele </h3>
+                            <h2 class="servico-title">Masculina</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>A <a href="https://www.procaphair.com.br/protese-de-micropele-masculina"><strong>prótese
+                                        de micropele masculina</strong></a> oferece uma grande mudança instantânea na
+                                aparência, que pode te ajudar e muito no dia a dia, pois dá um ar sofisticado e bastante
+                                natural, ficando praticamente...
+                        </div>
+                        <a href="https://www.procaphair.com.br/protese-de-micropele-masculina"
+                            title="Prótese de Micropele Masculina" class="btn-link btn-link-yellow">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/protese-de-tela-feminina/"
+                            title="Prótese Capilar de Tela Feminina">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/protese-de-tela-feminina.jpg"
+                                alt="Prótese Capilar de Tela Feminina" title="Prótese Capilar de Tela Feminina">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/protese-de-tela-feminina/"
+                            title="Prótese Capilar de Tela Feminina">
+                            <h3 class="servico-subtitle">Prótese Capilar de</h3>
+                            <h2 class="servico-title">Tela Feminina</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>A <a href="https://www.procaphair.com.br/protese-de-tela-feminina/"><strong>prótese de
+                                        tela feminina</strong></a> é uma excelente forma de disfarçar a queda de cabelo,
+                                te ajudando a recuperar a sua confiança. Proporciona um excelente efeito estético, dando
+                                uma aparência natural. Além de...
+                        </div>
+                        <a href="https://www.procaphair.com.br/protese-de-tela-feminina/"
+                            title="Prótese Capilar de Tela Feminina" class="btn-link btn-link-yellow">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-masculina/"
+                            title="Manutenção de Prótese Masculina">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/manutencao-protese-1.jpg"
+                                alt="Manutenção de Prótese Masculina" title="Manutenção de Prótese Masculina">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-masculina/"
+                            title="Manutenção de Prótese Masculina">
+                            <h3 class="servico-subtitle">Manutenção de Prótese </h3>
+                            <h2 class="servico-title">Capilar Masculina</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>A <a href="https://www.procaphair.com.br/manutencao-de-protese-masculina/"><strong>manutenção
+                                        da prótese capilar masculina</strong></a> é muito importante, pois a cola
+                                utilizada para fixar a peça no couro cabeludo vai perdendo aderência. Por isso, é
+                                fundamental tomar alguns cuidados, como...
+                        </div>
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-masculina/"
+                            title="Manutenção de Prótese Masculina" class="btn-link btn-link-yellow">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/perucas/" title="Perucas">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/perucas.jpg"
+                                alt="Perucas" title="Perucas">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/perucas/" title="Perucas">
+                            <h3 class="servico-subtitle"></h3>
+                            <h2 class="servico-title">Perucas</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>As <a href="https://www.procaphair.com.br/perucas/"><strong>perucas</strong></a> se
+                                tornaram um acessório importante para as mulheres que querem uma mudança no visual ou
+                                que estão enfrentando problemas de calvície. É uma excelente forma de recuperar a
+                                confiança e melhorar a autoestima,...
+                        </div>
+                        <a href="https://www.procaphair.com.br/perucas/" title="Perucas"
+                            class="btn-link btn-link-yellow">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-feminina/"
+                            title="Manutenção de Prótese Capilar Feminina">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/manutencao-protese.jpg"
+                                alt="Manutenção de Prótese Capilar Feminina"
+                                title="Manutenção de Prótese Capilar Feminina">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-feminina/"
+                            title="Manutenção de Prótese Capilar Feminina">
+                            <h3 class="servico-subtitle">Manutenção de Prótese</h3>
+                            <h2 class="servico-title"> Capilar Feminina</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>A <a href="https://www.procaphair.com.br/manutencao-de-protese-feminina/"><strong>manutenção
+                                        da prótese capilar feminina</strong></a> é muito importante, pois a cola
+                                utilizada para fixar a peça no couro cabeludo vai perdendo aderência. Por isso, é
+                                fundamental tomar alguns cuidados, como...
+                        </div>
+                        <a href="https://www.procaphair.com.br/manutencao-de-protese-feminina/"
+                            title="Manutenção de Prótese Capilar Feminina" class="btn-link btn-link-yellow">Saiba
+                            mais</a>
+                    </div>
+                </article>
+                <article class="servico flex">
+                    <picture class="servico-img">
+                        <a href="https://www.procaphair.com.br/protese-feminina-sob-encomenda"
+                            title="Prótese Feminina Sob Medida">
+                            <img class="lozad"
+                                data-src="https://www.procaphair.com.br/wp-content/uploads/2020/04/protese-sob-encomenda.jpg"
+                                alt="Prótese Feminina Sob Medida" title="Prótese Feminina Sob Medida">
+                        </a>
+                    </picture>
+                    <div class="servico-resumo">
+                        <a href="https://www.procaphair.com.br/protese-feminina-sob-encomenda"
+                            title="Prótese Feminina Sob Medida">
+                            <h3 class="servico-subtitle">Prótese Capilar Feminina</h3>
+                            <h2 class="servico-title">Sob Medida</h2>
+                        </a>
+                        <div class="servico-description">
+                            <p>As <a href="https://www.procaphair.com.br/protese-feminina-sob-encomenda"><strong>próteses
+                                        capilares femininas sob medida</strong></a> são uma excelente alternativa para
+                                quem precisa de uma peça personalizada, isto é, projetada de acordo com suas
+                                necessidades de cor, tamanho e volume, além...
+                        </div>
+                        <a href="https://www.procaphair.com.br/protese-feminina-sob-encomenda"
+                            title="Prótese Feminina Sob Medida" class="btn-link btn-link-yellow">Saiba mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.categoria');
+            menu.classList.toggle('show');
+        }
+    </script>
+
 </body>
+
 </html>
