@@ -129,6 +129,8 @@
     border-radius: 30px 1px;
 }
 
+/* Serviços - 2 */
+
 .servicos-2 {
     background-color: var(--cor-branca);
 }
@@ -271,4 +273,42 @@
         gap: 2rem;
         flex-direction: column;
     }
+
+    /* Serviços - 2 */
+
+    .servicos-2 {
+        background-color: var(--cor-branca);
+    }
+    
+    .container-img-2 {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Apenas uma coluna no mobile */
+        gap: 1rem;
+    }
+    
+    .img-servicos-2 {
+        margin-top: 1rem;
+        border-right: none;
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .img-servicos-2 img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container-img-2 p {
+        text-align: center;
+        margin-top: 50px;
+        color: var(--cor-dourada);
+        font-size: 1.1rem;
+    }
+    
 }
