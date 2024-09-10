@@ -28,12 +28,17 @@
     font-weight: 600;
 }
 
+.desc-conteudo-1 h1 {
+    color: #979595;
+    margin-top: 20px;
+}
+
 .desc-conteudo-1 p {
     color: var(--cor-branca);
     line-height: 25px;
     font-weight: 600;
     width: 500px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .desc-conteudo-1 h3 {
