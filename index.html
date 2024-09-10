@@ -134,7 +134,9 @@
                 <img src="img/protese-de-micropele-1.webp" alt="">
                 <div class="desc-servico">
                     <h3>Servico 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores quia ex nostrum labore. Voluptatum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur
+                        possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores
+                        quia ex nostrum labore. Voluptatum.</p>
                     <br><br>
                     <a href="#" class="button-servicos">Saiba Mais</a>
                 </div>
@@ -143,7 +145,9 @@
                 <img src="img/protese-de-tela-feminina.webp" alt="">
                 <div class="desc-servico">
                     <h3>Servico 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores quia ex nostrum labore. Voluptatum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur
+                        possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores
+                        quia ex nostrum labore. Voluptatum.</p>
                     <br><br>
                     <a href="#" class="button-servicos">Saiba Mais</a>
                 </div>
@@ -178,7 +182,13 @@
             <img src="img/pro-3.jpg" alt="">
             <div class="desc-conteudo-1">
                 <i>,,</i>
-                <p>Bom, eu to com a protés já vai fazer 2 meses, e eu nem fiquei triste em raspar o meu cabelo quando eu comecei fazer a quimioterapia, porque na verdade eu nem sinto que eu perdi o cabelo, porque a protése é bem fidedigna, a cor, as mechas, então eu to amando a experiência de não precisar ficar careca. Eu to gostando de passar por esse tratamento todo como se nada tivesse acontecido com meu cabelo. Eu tenho 3 crianças pequenas então pode sacudir que não cai, não é como se fosse uma peruca. Então eu tenho uma vida normal e estou me sentindo bonita mesmo durante o tratamento da quimíoterapia, eu estou me sentindo bem como mesmo que é o mais importante</p>
+                <p>Bom, eu to com a protés já vai fazer 2 meses, e eu nem fiquei triste em raspar o meu cabelo quando eu
+                    comecei fazer a quimioterapia, porque na verdade eu nem sinto que eu perdi o cabelo, porque a
+                    protése é bem fidedigna, a cor, as mechas, então eu to amando a experiência de não precisar ficar
+                    careca. Eu to gostando de passar por esse tratamento todo como se nada tivesse acontecido com meu
+                    cabelo. Eu tenho 3 crianças pequenas então pode sacudir que não cai, não é como se fosse uma peruca.
+                    Então eu tenho uma vida normal e estou me sentindo bonita mesmo durante o tratamento da
+                    quimíoterapia, eu estou me sentindo bem como mesmo que é o mais importante</p>
                 <h3>Ass: FERNANDO</h3>
             </div>
         </div>
@@ -199,28 +209,31 @@
     <section class="contato">
         <div class="contato-container">
             <div class="contato-form">
-                <form action="">
+                <form id="contatoForm">
                     <div class="form-bloco">
-                        <input type="text" placeholder="Nome:">
-                        <input type="email" name="email" id="" placeholder="E-mail">
+                        <input type="text" id="nome" placeholder="Nome:" required>
+                        <input type="email" id="email" placeholder="E-mail" required>
                     </div>
                     <div class="form-bloco">
-                        <input type="text" placeholder="Telefone:">
-                        <input type="email" name="email" id="" placeholder="E-mail">
+                        <input type="text" id="telefone" placeholder="Telefone:" required>
+                        <select id="servico" required>
+                            <option value="" disabled selected>Selecione o serviço</option>
+                            <option value="Avaliação Prótese Masculina">Avaliação Prótese Masculina</option>
+                            <option value="Avaliação Prótese Feminina">Avaliação Prótese Feminina</option>
+                            <option value="Manutenção">Manutenção</option>
+                            <option value="Peruca">Peruca</option>
+                        </select>
                     </div>
-                    <textarea name="mensagem" id="mensagem">
-                        Mensagem
-                    </textarea>
-                    <button type="submit">
-                        Enviar
-                    </button>
+                    <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="img">
-                <img src="img/contato-persona-masculino.webp" alt="">
+                <img src="img/contato-persona-masculino.webp" alt="Contato">
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="footer-container">
@@ -228,13 +241,13 @@
                 <img src="img/Logo.jpg" alt="Logo" />
                 <h2>Evidence Capilar</h2>
             </div>
-    
+
             <div class="footer-info">
-                <p>Endereço: Rua Exemplo, 123, Centro, Cidade, Estado</p>
-                <p>Email: contato@empresa.com</p>
-                <p>Telefone: (99) 9999-9999</p>
+                <p>Endereço: Domingos De Morais 1334, Sala D10. Proximo metro Vila Marinha.</p>
+                <p>Email: contato@evidencecapilar.com</p>
+                <p>Telefone: (11) 96634-4523</p>
             </div>
-    
+
             <div class="footer-menus">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -244,12 +257,12 @@
                 </ul>
             </div>
         </div>
-    
+
         <div class="footer-copy">
             <p>&copy; 2024 Evidence Capilar. Todos os direitos reservados.</p>
         </div>
     </footer>
-    
+
 
     <!--
     <section id="nossos-servicos">
@@ -428,6 +441,36 @@
             const menu = document.querySelector('.categoria');
             menu.classList.toggle('show');
         }
+    </script>
+
+    <script>
+        document.getElementById("contatoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Captura os valores preenchidos pelo usuário
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let telefone = document.getElementById("telefone").value;
+            let servico = document.getElementById("servico").value;
+            let mensagem = document.getElementById("mensagem").value;
+
+            // Verifica se todos os campos obrigatórios estão preenchidos
+            if (nome && email && telefone && servico) {
+                // Monta a URL do WhatsApp com as informações
+                let url = `https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=
+            *Nome*: ${nome}%0A
+            *E-mail*: ${email}%0A
+            *Telefone*: ${telefone}%0A
+            *Serviço*: ${servico}%0A
+            *Mensagem*: ${mensagem}`;
+
+                // Remove os espaços extras e redireciona para o WhatsApp
+                window.open(url.replace(/\s+/g, ''), '_blank');
+            } else {
+                alert("Por favor, preencha todos os campos obrigatórios.");
+            }
+        });
+
     </script>
 
 </body>
