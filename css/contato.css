@@ -101,6 +101,7 @@ select:focus {
     .contato-container {
         flex-direction: column;
         text-align: center;
+        margin-top: 50px;
     }
 
     .form-bloco {
@@ -113,5 +114,7 @@ select:focus {
 
     .img {
         margin-top: 20px;
+        width: 80%;
+        height: auto;
     }
 }
