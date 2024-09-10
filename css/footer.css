@@ -73,6 +73,23 @@ footer {
     }
 
     .footer-logo h2 {
-        text-align: center;
+        text-align: left;
     }
+
+    .footer-info p {
+        margin: 5px 0;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .footer-menus ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .footer-menus ul li {
+        margin-bottom: 10px;
+    }
+    
 }
