@@ -133,10 +133,8 @@
             <div class="bloco">
                 <img src="img/protese-de-micropele-1.webp" alt="">
                 <div class="desc-servico">
-                    <h3>Servico 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur
-                        possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores
-                        quia ex nostrum labore. Voluptatum.</p>
+                    <h3>Prótese Capilar</h3>
+                    <p>A prótese capilar é uma solução moderna e eficaz para quem busca recuperar a autoestima e a aparência natural dos cabelos. Indicada para pessoas que sofrem com queda de cabelo, calvície ou outros problemas capilares, a prótese é confeccionada com materiais de alta qualidade e pode ser personalizada de acordo com o tipo de cabelo, cor e estilo do usuário. Ao contrário dos implantes capilares, a prótese capilar oferece uma aplicação não invasiva e de resultado imediato, proporcionando um visual natural e harmônico. Seja para homens ou mulheres, essa técnica oferece conforto, praticidade e discrição, sendo uma excelente alternativa para quem busca recuperar a confiança.</p>
                     <br><br>
                     <a href="https://wa.link/yve4em" class="button-servicos">Saiba Mais</a>
                 </div>
@@ -144,10 +142,8 @@
             <div class="bloco">
                 <img src="img/protese-de-tela-feminina.webp" alt="">
                 <div class="desc-servico">
-                    <h3>Servico 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis atque ullam totam pariatur
-                        possimus necessitatibus? Autem quo quam eos ipsum possimus, recusandae dolor officia, maiores
-                        quia ex nostrum labore. Voluptatum.</p>
+                    <h3>Corte</h3>
+                    <p>O corte de cabelo é uma das maneiras mais rápidas e eficazes de transformar o visual e expressar a personalidade. Seja um corte clássico ou moderno, curto ou longo, o ato de cortar o cabelo não é apenas uma questão de estilo, mas também de saúde capilar. Com técnicas inovadoras e personalizadas, profissionais qualificados podem ajudar a encontrar o corte ideal, que valorize os traços do rosto e esteja em sintonia com o estilo de vida e as tendências atuais. Um bom corte de cabelo traz leveza, renovação e realça a beleza natural, sendo essencial para manter os fios saudáveis e bem cuidados.</p>
                     <br><br>
                     <a href="https://wa.link/yve4em" class="button-servicos">Saiba Mais</a>
                 </div>
@@ -183,17 +179,23 @@
             <div class="desc-conteudo-1">
                 <div class="bloco-1coneudo-1">
                     <h1>1 - Qualidade e Confiabilidade</h1>
-                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia que está em boas mãos</p>
+                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e
+                        duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia
+                        que está em boas mãos</p>
                 </div>
                 <div class="bloco-1coneudo-1">
                     <h1>1 - Qualidade e Confiabilidade</h1>
-                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia que está em boas mãos</p>
+                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e
+                        duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia
+                        que está em boas mãos</p>
                 </div>
                 <div class="bloco-1coneudo-1">
                     <h1>1 - Qualidade e Confiabilidade</h1>
-                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia que está em boas mãos</p>
+                    <p>Na Evidence Capilar oferecemos produtos de altíssima qualidade que garatem um resultado natural e
+                        duradouro. Com a expereiência e o cuidado que prestamos com cada atendimento, você pode confia
+                        que está em boas mãos</p>
                 </div>
-                
+
 
             </div>
         </div>
@@ -202,7 +204,7 @@
     <section class="conteudo-2">
         <br><br><br><br>
         <h2>Prótese capilar</h2>
-        <p>Evidence Capilar - Transformaçãp e Beleza</p>
+        <p>Evidence Capilar - Transformação e Beleza</p>
         <div class="container-conteudo-2">
             <img src="img/pro-1.jpg" alt="">
             <img src="img/pro-2.jpg" alt="">
@@ -460,21 +462,21 @@
 
             // Verifica se todos os campos obrigatórios estão preenchidos
             if (nome && email && telefone && servico) {
-                // Monta a URL do WhatsApp com as informações
-                let url = `https://api.whatsapp.com/send?phone=5511966344523&text=
+                // Monta a URL do WhatsApp com as informações, formatando corretamente
+                let url = `https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=
             *Nome*: ${nome}%0A
             *E-mail*: ${email}%0A
             *Telefone*: ${telefone}%0A
             *Serviço*: ${servico}%0A
             *Mensagem*: ${mensagem}`;
 
-                // Remove os espaços extras e redireciona para o WhatsApp
-                window.open(url.replace(/\s+/g, ''), '_blank');
+                // Remove espaços extras, substitui quebras de linha, e redireciona para o WhatsApp
+                url = url.replace(/\s+/g, '%20').replace(/\n/g, '%0A');
+                window.open(url, '_blank');
             } else {
                 alert("Por favor, preencha todos os campos obrigatórios.");
             }
         });
-
     </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -487,7 +489,7 @@
     border-radius:50px;
     text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
     z-index:1000;" target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
 
 </body>
